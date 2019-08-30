@@ -1,5 +1,5 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <math.h>
 int main() {
     int T;
@@ -7,7 +7,7 @@ int main() {
     while (T--) {
         std::string s1, s2;
         std::cin>>s1>>s2;
-        std::map<char, int> hashTable;
+        std::unordered_map<char, int> hashTable;
         for(char c : s2)
             hashTable[c]++;
         int left=0,right=0,min= INT_MAX, count = 0;
